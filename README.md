@@ -33,38 +33,6 @@ Gráficos de Barras de Constructores:
 Mostrar un gráfico de barras con los puntos totales por constructor para un año específico.
 Botón para regresar a la pantalla principal.
 
-Estructura del Proyecto
-proyectogrupalf1dbpostgres/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── example/
-│   │   │           ├── App.java
-│   │   │           ├── Controllers/
-│   │   │           │   ├── ConstructorResultsController.java
-│   │   │           │   └── DriverResultsController.java
-│   │   │           ├── Models/
-│   │   │           │   ├── ConstructorResult.java
-│   │   │           │   ├── DriverResult.java
-│   │   │           │   └── Season.java
-│   │   │           ├── Repositories/
-│   │   │           │   ├── ConstructorResultRepository.java
-│   │   │           │   ├── DriverResultRepository.java
-│   │   │           │   └── SeasonRepository.java
-│   │   │           └── view/
-│   │   │               ├── ConstructorBarChartWindow.java
-│   │   │               ├── DriverBarChartWindow.java
-│   │   │               ├── ConstructorResultsWindow.java
-│   │   │               └── DriverResultsWindow.java
-│   │   ├── resources/
-│   │   │   ├── css/
-│   │   │   │   └── style.css
-│   │   │   └── imagen/
-│   │   │       ├── F1.jpg
-│   │   │       └── icon.png
-└── pom.xml
-
 
 
 ![image](https://github.com/user-attachments/assets/adcf9d9f-330a-4699-a02d-50fa0e72bca7)
