@@ -1,0 +1,148 @@
+.vbox {
+    -fx-background-image: url("/imagen/F1.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-spacing: 10;
+    -fx-padding: 20px;
+}
+
+/* Estilo para los botones */
+.button, .magic-button {
+    -fx-background-color: #333333; /* Gris oscuro */
+    -fx-cursor: pointer;
+    -fx-border: 2px solid #FF0000; /* Borde rojo */
+    -fx-padding: 10px 20px;
+    -fx-text-fill: #FFF; /* Letras blancas */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+
+.button:hover, .magic-button:hover {
+    -fx-background-color: #555555; /* Gris más claro al pasar el ratón */
+    -fx-border-color: #FF4500; /* Borde rojo más claro al pasar el ratón */
+}
+
+.button::before, .magic-button::before {
+    content: "";
+    -fx-position: absolute;
+    -fx-top: -3px;
+    -fx-left: -3px;
+    -fx-right: -3px;
+    -fx-bottom: -3px;
+    -fx-border-radius: 5px;
+    -fx-z-index: -1;
+    -fx-filter: blur(5px);
+}
+
+@keyframes glowing {
+    0% {
+        -fx-background-position: 0 0; 
+    }
+    50% {
+        -fx-background-position: 200% 0; 
+    }
+    100% {
+        -fx-background-position: 0 0; 
+    }
+}
+
+/* Estilo para el TableView */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+.table-column-header {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+.stage {
+    -fx-background-color: #f0f0f0;
+}
+
+.scene {
+    -fx-background-color: #2e2e2e; /* Fondo oscuro */
+}
+
+.border-pane {
+    -fx-background-image: url("/imagen/F1.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.border-pane-dark {
+    -fx-background-color: #2e2e2e; /* Color oscuro sin ser negro */
+}
+
+.combo-box {
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+/* Estilo para la ventana principal */
+.root {
+    -fx-background-image: url("/imagen/F1.jpg");
+    -fx-background-size: cover;  /* Ajustar tamaño al contenedor */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.root-dark {
+    -fx-background-color: #2e2e2e; /* Color oscuro sin ser negro */
+}
+
+/* Estilo para el eje X del gráfico de barras */
+.axis-label {
+    -fx-background-color: white; /* Fondo blanco */
+    -fx-text-fill: black; /* Texto negro */
+    -fx-font-size: 14px; /* Tamaño de fuente más grande */
+    -fx-padding: 5px; /* Relleno */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Aumentar tamaño de fuente para etiquetas del eje Y */
+.axis .axis-label {
+    -fx-font-size: 18px; /* Aumentar tamaño de fuente */
+    -fx-text-fill: white; /* Color de texto blanco */
+}
+
+/* Estilo para el gráfico de barras */
+.chart-bar {
+    -fx-bar-fill: #FFA500; /* Color de las barras */
+}
+
+.chart-legend {
+    -fx-background-color: transparent; /* Fondo transparente para la leyenda */
+}
+
+.chart-title {
+    -fx-text-fill: white; /* Color de texto del título */
+    -fx-font-size: 20px; /* Tamaño de fuente del título */
+}
+
+.axis {
+    -fx-tick-label-fill: white; /* Color de las etiquetas de los ejes */
+    -fx-label-fill: white; /* Color de las etiquetas de los ejes */
+    -fx-font-size: 14px; /* Tamaño de fuente más grande */
+    -fx-font-weight: bold; /* Texto grueso */
+}
+
+.chart-plot-background {
+    -fx-background-color: #2e2e2e; /* Fondo del gráfico */
+}
+
+.chart-plot-border {
+    -fx-border-color: transparent; /* Borde del gráfico */
+}
